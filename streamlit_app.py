@@ -12,6 +12,7 @@ age = st.number_input("나이", min_value=0, max_value=120, value=23)
 major = st.text_input("전공", "인천대학교 수학교육과")
 year = st.selectbox("학번", ["20학번", "21학번", "22학번", "23학번", "24학번"], index=3)
 grade = st.selectbox("학년", ["1학년", "2학년", "3학년", "4학년"], index=3)
+hobby = st.text_input("취미", "넷플릭스 보기")
 about = st.text_area("자기소개", "안녕하세요! 저는 인천대학교 수학교육과에 재학 중인 23학번 박예진입니다. 현재 4학년이고, 수학 교육에 열정을 가지고 있으며 Streamlit을 통해 웹 앱을 만들고 있습니다.")
 
 st.write("---")
@@ -20,5 +21,6 @@ st.markdown(f"""**이름:** {name}
 **나이:** {age}
 **전공:** {major}
 **학번:** {year}
-**학년:** {grade}""")
+**학년:** {grade}
+**취미:** {hobby}""")
 st.write(about)
